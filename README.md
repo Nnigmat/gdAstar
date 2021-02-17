@@ -1,7 +1,15 @@
 # gdAstar
-Godot A* module
+Godot A* module for Godot 3.2
 
 A* implementation for godot, based off Justin Heyes-Jones A* C++ implementation ([https://github.com/justinhj/astar-algorithm-cpp](https://github.com/justinhj/astar-algorithm-cpp))
+
+## How to install
+
+1. To install the module you need to download the godot source code
+2. Checkout to 3.2 version
+3. Install required libs from guide https://docs.godotengine.org/ru/stable/development/compiling/index.html
+4. Clone the module into `godot/modules/`. So you will have `godot/modules/gdAstar`.
+5. Start compilation from the official guide https://docs.godotengine.org/ru/stable/development/compiling/index.html
 
 ## Example usage in gdscript
 
