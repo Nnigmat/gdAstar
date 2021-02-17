@@ -107,8 +107,8 @@ void gdAstar::ClearPoints() {
 	astarMap.clear();
 }
 
-Vector2Array gdAstar::FindPath(int x0, int y0, int x1, int y1) {
-	Vector2Array path;
+PoolVector2Array gdAstar::FindPath(int x0, int y0, int x1, int y1) {
+	PoolVector2Array path;
 
 	AStarSearch<MapSearchNode> astarsearch;
 
@@ -149,9 +149,9 @@ Vector2Array gdAstar::FindPath(int x0, int y0, int x1, int y1) {
 }
 
 void gdAstar::_bind_methods() {
-	ObjectTypeDB::bind_method("AddPoint", &gdAstar::AddPoint);
-	ObjectTypeDB::bind_method("ClearPoints", &gdAstar::ClearPoints);
-	ObjectTypeDB::bind_method("FindPath", &gdAstar::FindPath);
+	ClassDB::bind_method("AddPoint", &gdAstar::AddPoint);
+	ClassDB::bind_method("ClearPoints", &gdAstar::ClearPoints);
+	ClassDB::bind_method("FindPath", &gdAstar::FindPath);
 }
 
 gdAstar::gdAstar() {

@@ -1,10 +1,10 @@
-#ifndef __GDASTAR_H__
-#define __GDASTAR_H__
+#ifndef GDASTAR_H
+#define GDASTAR_H
 
 #include <vector>
 #include <utility>
 
-#include "reference.h"
+#include "core/reference.h"
 #include "stlastar.h"
 
 using namespace std;
@@ -31,7 +31,7 @@ public:
 
 
 class gdAstar : public Reference {
-	OBJ_TYPE(gdAstar, Reference);
+	GDCLASS(gdAstar, Reference);
 
 protected:
 	static void _bind_methods();
@@ -45,7 +45,7 @@ public:
 
 	void AddPoint(int x, int y);
 	void ClearPoints();
-	Vector2Array FindPath(int x0, int y0, int x1, int y1);
+	PoolVector2Array FindPath(int x0, int y0, int x1, int y1);
 };
 
 #endif
